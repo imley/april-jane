@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+<section id="content">
+{% if articles %}
+  {% for article in articles_page.object_list %}
+  <article class="post-preview">
+    <h2 class="post-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+    {% include 'article_infos.html' %}
+    {{ article.summary }}
+    <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a>
+    {% include 'comments.html' %}
+  </article>
+  {% endfor %}
+{% endif %}
+</section>
+{% endblock content %}
+  
+    
+    
+  

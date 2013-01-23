@@ -8,3 +8,22 @@
 
 /* Imports */
 @import url("normalize.css");
+@import url("autumn.css");
+
+body {
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#content {
+    float: left;
+    width: 800px;
+}
+
+#sidebar {
+    float: left;
+    width: 150px;
+}
