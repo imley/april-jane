@@ -28,14 +28,13 @@
       <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
     {% endif %}
-    {% for cat, null in categories %}
-      <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-    {% endfor %}
     </ul></nav>
   </header>
 
   {% block content %}
   {% endblock %}
+
+  {% include 'sidebar.html' %}
 
   <section>
   </section>
