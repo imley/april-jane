@@ -15,7 +15,7 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body id="index">
-<div id="wrapper">
+<section id="wrapper">
   <header id="banner">
     <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
     <h2>{%if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}</h2>
@@ -32,16 +32,19 @@
     </ul></nav>
   </header>
 
-  {% block content %}
-  {% endblock %}
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
 
   {% include 'sidebar.html' %}
 
-  <section>
-  </section>
-
-  <footer>
+  <footer id="footer">
+  <p>Powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>.</p>
+  <p>This theme is by <a href="http://blog.imley.net/">me</a></p>
   </footer>
-</div>
+</section>
+
+{% include 'analytics.html' %}
 </body>
 </html>

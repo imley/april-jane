@@ -11,19 +11,40 @@
 @import url("autumn.css");
 
 body {
+    background-color: #e0e0e0;
 }
 
 #wrapper {
-    width: 960px;
+    padding: 0 40px;
+    padding: 0 2.857142857rem;
+    max-width: 960px;
     margin: 0 auto;
+    background-color: #fff;
 }
 
 #content {
     float: left;
-    width: 800px;
+    width: 725px;
 }
 
 #sidebar {
-    float: left;
-    width: 150px;
+    float: right;
+    width: 200px;
+}
+
+#sidebar h1{
+    font-size: 1.5em;
+}
+
+#entry-comments h1{
+    font-size: 1.5em;
+}
+
+#footer {
+    clear: both;
+    text-align: right;
+}
+
+.codehilite {
+    background-color: #f0f0f0;
 }

@@ -1,4 +1,4 @@
-<footer class="post-info">
+<div class="post-info">
         <abbr class="published" title="{{ article.date.isoformat() }}">
                 {{ article.locale_date }}
         </abbr>
@@ -8,8 +8,8 @@
                 By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
         </address>
         {% endif %}
-<p>In <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>. {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">get the pdf</a>{% endif %}</p>
+<span class="entry-cat">Categroy: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span> 
 {% include 'taglist.html' %}
 {% import 'translations.html' as translations with context %}
 {{ translations.translations_for(article) }}
-</footer><!-- /.post-info -->
+</div><!-- /.post-info -->
