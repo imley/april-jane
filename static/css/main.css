@@ -22,14 +22,49 @@ body {
     background-color: #fff;
 }
 
+a.site-name {
+    text-decoration: none;
+    color: #555;
+}
+
+a.site-name:hover {
+    color: #222;
+}
+
+#banner h1 {
+    padding-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+#banner h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    font-style: italic;
+    color: #777;
+}
+
+#banner ul {
+    padding-left: 0;
+}
+
+#banner li{
+    display: inline;
+}
+
 #content {
     float: left;
     width: 725px;
 }
 
+.entry-tags a {
+    margin-left: 0.5em;
+}
+
 #sidebar {
     float: right;
     width: 200px;
+    padding-left: 20px;
+    border-left: 1px dotted #eee;
 }
 
 #sidebar h1{
@@ -47,4 +82,16 @@ body {
 
 .codehilite {
     background-color: #f0f0f0;
+}
+
+article h1 {
+    border-left: 0.5em solid #eee;
+    padding-left: 0.5em;
+}
+article h1 a {
+    text-decoration: none;
+}
+
+article {
+    border-bottom: 2px dotted #eee;
 }
