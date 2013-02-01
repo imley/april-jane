@@ -25,8 +25,8 @@
       <li><a href="{{ link }}">{{ title }}</a></li>
     {% endfor %}
     {% if DISPLAY_PAGES_ON_MENU %}
-    {% for page in PAGES %}
-      <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+    {% for page_item in PAGES %}
+      <li><a {% if page and page_item == page %} class="active" {% endif %} href="{{ SITEURL }}/{{ page_item.url }}">{{ page_item.title }}</a></li>
     {% endfor %}
     {% endif %}
     </ul></nav>

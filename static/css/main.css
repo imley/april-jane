@@ -36,6 +36,10 @@ a.site-name:hover {
     margin-bottom: 0.2em;
 }
 
+#banner a {
+    text-decoration: none;
+}
+
 #banner h2 {
     font-size: 1.2em;
     margin-top: 0;
@@ -47,8 +51,19 @@ a.site-name:hover {
     padding-left: 0;
 }
 
-#banner li{
+#banner nav li {
     display: inline;
+}
+
+#banner nav a {
+    font-size: 1.1em;
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid #888;
+    color: #000;
+}
+
+#banner nav a:hover, #banner nav a.active {
+    border-color: #333;
 }
 
 #content {

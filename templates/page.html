@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title|striptags }} | {{ SITENAME }}{% endblock %}
+{% block content %}
+<article> 
+  <header>
+    <h1 class="entry-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="entry-content">
+    {{ page.content }}
+  </div>
+</article>
+
+<section id="entry-comments">
+{% if DISQUS_SITENAME %}
+  <h1>Comments on {{ page.title }}</h2>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_identifier = "{{ page.url }}";
+    {% if not RELATIVE_URLS %}
+    var disqus_url = "{{ SITEURL }}/{{ page.url }}";
+    {% elif FEED_DOMAIN %}
+    var disqus_url = "{{ FEED_DOMAIN }}/{{ page.url }}";
+    {% endif %}
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+{% endif %}
+</section>
+{% endblock %}
