@@ -9,11 +9,13 @@
   <div class="entry-content">
     {{ page.content }}
   </div>
+
+  <p class="permalink">Permalink to this page: <a rel="bookmark" title="{{ page.title }}"href="{{ FEED_DOMAIN }}/{{ page.url }}">{{ FEED_DOMAIN }}/{{ page.url }}</a></p>
 </article>
 
 <section id="entry-comments">
 {% if DISQUS_SITENAME %}
-  <h1>Comments on {{ page.title }}</h2>
+  <h1>Comments</h2>
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_identifier = "{{ page.url }}";

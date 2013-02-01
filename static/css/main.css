@@ -22,8 +22,15 @@ a:hover {
     color: #4183E0;
 }
 
+blockquote {
+    margin-left: 1em;
+    padding-left: 0.5em;
+    border-left: 1px dotted #eee;
+}
+
 body {
     background-color: #eee;
+    font-family: Heiti;
 }
 
 #wrapper {
@@ -35,12 +42,12 @@ body {
 }
 
 a.site-name {
-    text-decoration: none;
     color: #444;
 }
 
 a.site-name:hover {
     color: #222;
+    text-shadow: 0 0 1px;
 }
 
 #banner {
@@ -86,9 +93,17 @@ a.site-name:hover {
     color: #333;
 }
 
+#banner nav a.active {
+    font-weight: bold;
+}
+
 #banner nav a:hover, #banner nav a.active {
     border-color: #333;
     color: #000;
+}
+
+#banner nav a:hover {
+    text-shadow: 0 0 1px; 
 }
 
 #content {
@@ -134,12 +149,26 @@ a.site-name:hover {
     border-left: 0.2em solid #eee;
 }
 
+#sidebar a:hover {
+    text-shadow: 0 0 1px;
+}
+
+#sidebar a.active {
+    font-weight: bold;
+}
+
 #sidebar a.active, #sidebar a:hover {
     border-color: #aaa;
 }
 
+#search input {
+    width: 80%;
+}
+
 #entry-comments h1{
     font-size: 1.5em;
+    border-left: 0.5em solid #eee;
+    padding-left: 0.5em;
 }
 
 #footer {
@@ -149,16 +178,34 @@ a.site-name:hover {
 
 .codehilite {
     background-color: #f0f0f0;
+    margin: 0 0.2em;
+    padding: 0 0.5em;
 }
 
 article h1 {
     border-left: 0.5em solid #eee;
     padding-left: 0.5em;
 }
+
 article h1 a {
     text-decoration: none;
 }
 
+article h1 a:hover {
+    text-shadow: 0 0 1px;
+}
+
 article {
     border-bottom: 2px dotted #eee;
+}
+
+.permalink {
+    padding-left: 0.5em;
+    border-left: 0.3em solid #eee;
+    font-style: italic;
+}
+
+.permalink a {
+    font-style: normal;
+    font-weight: bold;
 }
