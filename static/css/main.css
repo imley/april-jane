@@ -10,8 +10,20 @@
 @import url("normalize.css");
 @import url("autumn.css");
 
+a {
+    color: #4183C4;
+}
+
+a.absent {
+    color: #cc0000;
+}
+
+a:hover {
+    color: #4183E0;
+}
+
 body {
-    background-color: #e0e0e0;
+    background-color: #eee;
 }
 
 #wrapper {
@@ -24,11 +36,17 @@ body {
 
 a.site-name {
     text-decoration: none;
-    color: #555;
+    color: #444;
 }
 
 a.site-name:hover {
     color: #222;
+}
+
+#banner {
+    border-bottom: 1px;
+    border-bottom-color: #eee;
+    border-bottom-style: dotted;
 }
 
 #banner h1 {
@@ -51,24 +69,33 @@ a.site-name:hover {
     padding-left: 0;
 }
 
+#banner nav {
+    margin-left: 201px;
+    margin-top: -15px;
+}
+
 #banner nav li {
     display: inline;
+    margin-right: 5px;
 }
 
 #banner nav a {
     font-size: 1.1em;
     padding-bottom: 0.2em;
     border-bottom: 2px solid #888;
-    color: #000;
+    color: #333;
 }
 
 #banner nav a:hover, #banner nav a.active {
     border-color: #333;
+    color: #000;
 }
 
 #content {
-    float: left;
-    width: 725px;
+    float: right;
+    width: 750px;
+    padding-left: 9px;
+    border-left: 1px dotted #eee;
 }
 
 .entry-tags a {
@@ -76,14 +103,39 @@ a.site-name:hover {
 }
 
 #sidebar {
-    float: right;
+    float: left;
     width: 200px;
-    padding-left: 20px;
-    border-left: 1px dotted #eee;
+}
+
+#sidebar section {
+    margin: 0.5em 0 1em 0;
 }
 
 #sidebar h1{
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar ul li {
+    margin-bottom: 0.2em;
+}
+
+#sidebar a {
+    text-decoration: none;
+    margin-left: 0.1em;
+    padding-left: 0.5em;
+    border-left: 0.2em solid #eee;
+}
+
+#sidebar a.active, #sidebar a:hover {
+    border-color: #aaa;
 }
 
 #entry-comments h1{
