@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title|striptags }} | {{ SITENAME }}{% endblock %}
 {% block content %}
-<article> 
+<article class="entry-content"> 
   <header>
     <h1 class="entry-title">{{ article.title }}</h1>
     {% include 'article_infos.html' %}

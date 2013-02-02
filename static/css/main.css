@@ -30,7 +30,8 @@ blockquote {
 
 body {
     background-color: #eee;
-    font-family: Heiti;
+    font-family: STHeiti, STXihei, Verdana, Arial, Microsoft Yahei;
+    line-height: 1.3em;
 }
 
 #wrapper {
@@ -77,7 +78,7 @@ a.site-name:hover {
 }
 
 #banner nav {
-    margin-left: 201px;
+    margin-left: 20%;
     margin-top: -15px;
 }
 
@@ -108,7 +109,7 @@ a.site-name:hover {
 
 #content {
     float: right;
-    width: 750px;
+    max-width: 78%; 
     padding-left: 9px;
     border-left: 1px dotted #eee;
 }
@@ -119,7 +120,7 @@ a.site-name:hover {
 
 #sidebar {
     float: left;
-    width: 200px;
+    width: 20%;
 }
 
 #sidebar section {
@@ -162,7 +163,7 @@ a.site-name:hover {
 }
 
 #search input {
-    width: 80%;
+    width: 85%;
 }
 
 #entry-comments h1{
@@ -182,9 +183,14 @@ a.site-name:hover {
     padding: 0 0.5em;
 }
 
-article h1 {
+article h1, article h2, article h3, article h4, article h5, article h6 {
     border-left: 0.5em solid #eee;
     padding-left: 0.5em;
+    line-height: 1em;
+}
+
+article h1 {
+    border-color: #aaa;
 }
 
 article h1 a {
@@ -197,6 +203,21 @@ article h1 a:hover {
 
 article {
     border-bottom: 2px dotted #eee;
+}
+
+.entry-content .entry-tags {
+    float: left;
+    border: 1px dotted #888;
+    border-radius: 5px;
+    margin-right: 1em;
+    width: 100px;
+    padding: 0.2em 0.5em;
+    background-color: #fffff0;
+}
+
+.entry-content .entry-tags a {
+    display: block;
+    margin-left: 1em;
 }
 
 .permalink {
