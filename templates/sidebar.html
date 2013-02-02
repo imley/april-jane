@@ -32,4 +32,16 @@
   {% endfor %}
   </ul>
   </section>
+
+{% if LINKS %}
+  <section>
+  <h1>Blogrool</h1>
+  <ul>
+    {% for name, link in LINKS %}
+    <li>
+      <a href="{{ link }}">{{name}}</a>
+    </li>
+    {% endfor %}
+  </section>
+{% endif %}
 </aside>
