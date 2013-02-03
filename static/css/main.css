@@ -31,6 +31,9 @@ blockquote {
 body {
     background-color: #eee;
     font-family: STHeiti, STXihei, Verdana, Arial, Microsoft Yahei;
+}
+
+body p {
     line-height: 1.3em;
 }
 
@@ -64,7 +67,7 @@ a.site-name:hover {
 }
 
 h1.sn-img {
-    margin-top: 45%;
+    margin-top: 50%;
 }
 
 #banner a {
@@ -102,7 +105,8 @@ h1.sn-img {
     width: 100%;
     margin-top: 1em;
     display: none;
-    max-height: 200px;
+    max-height: 230px;
+    border-radius: 5px;
 }
 
 .show {
@@ -139,6 +143,10 @@ h1.sn-img {
     width: 78%; 
     padding-left: 1%;
     border-left: 1px dotted #eee;
+}
+
+#content h1 {
+    margin: 0.2em 0 0.5em 0;
 }
 
 .entry-tags a {
@@ -262,6 +270,10 @@ article {
 .entry-content .entry-tags a {
     display: block;
     margin-left: 1em;
+}
+
+.post-info p {
+    margin: 0.2em 0;
 }
 
 .permalink {

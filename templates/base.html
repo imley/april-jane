@@ -47,7 +47,7 @@
   {% include 'sidebar.html' %}
 
   <div id="content">
-    <h1>{% block content_title %}{% endblock %}</h1>
+    {% block content_title %}{% endblock %}
     {% block content %}
     {% endblock %}
   </div>
