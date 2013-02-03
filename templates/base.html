@@ -19,12 +19,19 @@
 <section id="wrapper">
   <header id="banner">
     <div id="h-left">
-      <h1><a class="site-name" href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+      <h1 class="{% if BANNER_IMGS %}sn-img{% endif %}"><a class="site-name" href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
       <h2>{%if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}</h2>
     </div>
 
     <div id="h-right">
-      <nav><ul>
+      {% if BANNER_IMGS %}
+      <div id="banner-imgs">
+      {% for title, image in BANNER_IMGS %}
+        <img class="banner-img {% if loop.first %}show{% endif %}" id="banner1" title="{{ title }}" alt="{{ title }}" src="{{ SITEURL }}/static/images/{{ image }}"/>
+      {% endfor %}
+      </div>
+      {% endif %}
+      <nav class="{% if not BANNER_IMGS %}sn-noimg{% endif %}"><ul>
       {% if DISPLAY_PAGES_ON_MENU %}
       {% for page_item in PAGES %}
         <li><a {% if page and page_item == page %} class="active" {% endif %} href="{{ SITEURL }}/{{ page_item.url }}">{{ page_item.title }}</a></li>

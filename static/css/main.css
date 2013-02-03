@@ -38,7 +38,7 @@ body {
     padding: 0 40px;
     padding: 0 2.857142857rem;
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0.5em auto;
     background-color: #fff;
 }
 
@@ -55,11 +55,16 @@ a.site-name:hover {
     border-bottom: 1px;
     border-bottom-color: #eee;
     border-bottom-style: dotted;
+    display: inline-block;
+    width: 100%;
 }
 
 #banner h1 {
-    padding-top: 1em;
     margin-bottom: 0.2em;
+}
+
+h1.sn-img {
+    margin-top: 45%;
 }
 
 #banner a {
@@ -75,11 +80,33 @@ a.site-name:hover {
 
 #banner ul {
     padding-left: 0;
+    clear: both;
+    margin: 0.25em 0 0.8em 0;
 }
 
-#banner nav {
-    margin-left: 21%;
-    margin-top: -15px;
+#h-left {
+    width: 21%;
+    float: left;
+}
+
+#h-right {
+    width: 79%;
+    float: left;
+}
+
+#banner nav.sn-noimg {
+    margin-top: 4em;
+}
+
+.banner-img{
+    width: 100%;
+    margin-top: 1em;
+    display: none;
+    max-height: 200px;
+}
+
+.show {
+    display: block;
 }
 
 #banner nav li {
@@ -110,7 +137,7 @@ a.site-name:hover {
 #content {
     float: right;
     width: 78%; 
-    padding-left: 9px;
+    padding-left: 1%;
     border-left: 1px dotted #eee;
 }
 
@@ -121,6 +148,7 @@ a.site-name:hover {
 #sidebar {
     float: left;
     width: 20%;
+    overflow: hidden;
 }
 
 #sidebar section {
