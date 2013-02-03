@@ -64,6 +64,7 @@ a.site-name:hover {
 
 #banner h1 {
     margin-bottom: 0.2em;
+    line-height: 1em;
 }
 
 h1.sn-img {
@@ -79,6 +80,7 @@ h1.sn-img {
     margin-top: 0;
     font-style: italic;
     color: #777;
+    line-height: 1em;
 }
 
 #banner ul {
@@ -143,10 +145,16 @@ h1.sn-img {
     width: 78%; 
     padding-left: 1%;
     border-left: 1px dotted #eee;
+    line-height: 1em;
+}
+
+#content a {
+    line-height: 1em;
 }
 
 #content h1 {
     margin: 0.2em 0 0.5em 0;
+    vertical-align: center;
 }
 
 .entry-tags a {
@@ -258,10 +266,10 @@ article {
 }
 
 .entry-content .entry-tags {
-    float: left;
+    float: right;
     border: 1px dotted #888;
     border-radius: 5px;
-    margin-right: 1em;
+    margin-left: 1em;
     width: 100px;
     padding: 0.2em 0.5em;
     background-color: #fffff0;

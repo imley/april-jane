@@ -12,6 +12,7 @@
   {% endif %} 
 
   <!--[if IE]>
+  <link rel="stylesheet" type="text/css" media="all" href="{{ SITEURL }}/theme/css/ie.css"/>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 </head>
@@ -44,12 +45,15 @@
     </div>
   </header>
 
+  <div>
   {% include 'sidebar.html' %}
 
   <div id="content">
     {% block content_title %}{% endblock %}
     {% block content %}
     {% endblock %}
+  </div>
+
   </div>
 
   <footer id="footer">
