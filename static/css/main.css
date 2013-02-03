@@ -109,7 +109,7 @@ a.site-name:hover {
 
 #content {
     float: right;
-    max-width: 78%; 
+    width: 78%; 
     padding-left: 9px;
     border-left: 1px dotted #eee;
 }
@@ -160,6 +160,16 @@ a.site-name:hover {
 
 #sidebar a.active, #sidebar a:hover {
     border-color: #aaa;
+}
+
+#tagcloud a {
+    border: none;
+    margin: 0;
+    padding-right: 2px;
+}
+
+#tagcloud p {
+    line-height: 13px;
 }
 
 #search input {
@@ -229,4 +239,15 @@ article {
 .permalink a {
     font-style: normal;
     font-weight: bold;
+}
+
+a.readmore {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+a.readmore:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 1px;
 }

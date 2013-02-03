@@ -1,0 +1,6 @@
+<p>
+{% for tag, articles in tags %}
+<a href="{{ SITEURL}}/{{ tag.url }}" style="font-size: {{ articles.__len__()+11 }}px; color: rgb({{ 200 - articles.__len__()*20 }},{{ 200 - articles.__len__()*20 }},{{ 200 - articles.__len__()*20 }});">
+    {{ tag }}</a>
+{% endfor %}
+</p>
