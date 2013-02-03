@@ -1,5 +1,6 @@
 {% extends "base.html" %}
-{% block content_title %}Articles with tag "{{ tag }}"{% endblock %}
+{% block title %} {{ category }} | {{ SITENAME }} {% endblock %}
+{% block content_title %} Articles in "{{ category }}"{% endblock %}
 {% block content %}
 {% if articles %}
   {% for article in articles_page.object_list %}

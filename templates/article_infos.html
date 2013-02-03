@@ -1,6 +1,6 @@
 <div class="post-info">
   {% if article.author %}
-  <p><span class="entry-date">{{ article.date }}</span>, by <a class="author" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>, in <a class="entry-cat"href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
+  <p><span class="entry-date">{{ article.locale_date }}</span>, by <a class="author" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>, in <a class="entry-cat"href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
   {% endif %}
   </p> 
 {% include 'taglist.html' %}
