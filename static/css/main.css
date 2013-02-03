@@ -165,11 +165,17 @@ a.site-name:hover {
 #tagcloud a {
     border: none;
     margin: 0;
-    padding-right: 2px;
+    padding: 0;
+    margin-right: 1px;
+}
+
+#tagcloud a:hover {
+    font-weight: bold;
 }
 
 #tagcloud p {
     line-height: 13px;
+    text-align: center;
 }
 
 #search input {

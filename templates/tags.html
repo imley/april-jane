@@ -1,6 +1,11 @@
 <p>
 {% for tag, articles in tags %}
+{% if articles.__len__() < 11 %}
 <a href="{{ SITEURL}}/{{ tag.url }}" style="font-size: {{ articles.__len__()+11 }}px; color: rgb({{ 200 - articles.__len__()*20 }},{{ 200 - articles.__len__()*20 }},{{ 200 - articles.__len__()*20 }});">
     {{ tag }}</a>
+{% else %}
+<a href="{{ SITEURL}}/{{ tag.url }}" style="font-size: {{ 10+11 }}px; color: #000}});">
+    {{ tag }}</a>
+{% endif %}
 {% endfor %}
 </p>
