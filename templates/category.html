@@ -4,13 +4,7 @@
 {% block content %}
 {% if articles %}
   {% for article in articles_page.object_list %}
-  <article class="entry-summary">
-    <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-    {% include 'article_infos.html' %}
-    {{ article.summary }}
-    <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">&gt;&gt;&nbsp;read more</a>
-    {% include 'comments.html' %}
-  </article>
+  {% include 'article_sum.html' %}
   {% endfor %}
 {% endif %}
 {% include 'pagination.html' %}

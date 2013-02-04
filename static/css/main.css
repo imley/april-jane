@@ -28,6 +28,10 @@ blockquote {
     border-left: 1px dotted #eee;
 }
 
+code, kbd, pre, samp {
+    font-family: Courier, monospace, serif;
+}
+
 body {
     background-color: #eee;
     font-family: STHeiti, STXihei, Verdana, Arial, Microsoft Yahei;
@@ -55,11 +59,12 @@ a.site-name:hover {
 }
 
 #banner {
-    border-bottom: 1px;
-    border-bottom-color: #eee;
-    border-bottom-style: dotted;
+    border-bottom: 2px;
+    border-bottom-color: #aaa;
+    border-bottom-style: dashed;
     display: inline-block;
     width: 100%;
+    margin-bottom: 0.2em;
 }
 
 #banner h1 {
@@ -86,7 +91,8 @@ h1.sn-img {
 #banner ul {
     padding-left: 0;
     clear: both;
-    margin: 0.25em 0 0.8em 0;
+    margin: 0.5em 0 0.8em 0;
+    line-height: 1em;
 }
 
 #h-left {
@@ -144,17 +150,13 @@ h1.sn-img {
     float: right;
     width: 78%; 
     padding-left: 1%;
-    border-left: 1px dotted #eee;
-    line-height: 1em;
-}
-
-#content a {
-    line-height: 1em;
+    border-left: 1px dotted #bbb;
+    margin-bottom: 0.2em;
 }
 
 #content h1 {
-    margin: 0.2em 0 0.5em 0;
-    vertical-align: center;
+    margin: 5px 0 0.5em 0;
+    line-height: 1em;
 }
 
 .entry-tags a {
@@ -165,22 +167,25 @@ h1.sn-img {
     float: left;
     width: 20%;
     overflow: hidden;
+    margin-bottom: 0.2em;
 }
 
 #sidebar section {
-    margin: 0.5em 0 1em 0;
+    margin: 5px 0 1em 0;
 }
 
 #sidebar h1{
     font-size: 1.2em;
     margin: 0;
     margin-bottom: 0.2em;
+    line-height: 1.2em;
 }
 
 #sidebar ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    line-height: 1em;
 }
 
 #sidebar ul li {
@@ -235,6 +240,7 @@ h1.sn-img {
 #footer {
     clear: both;
     text-align: right;
+    border-top: 2px dashed #aaa;
 }
 
 .codehilite {
