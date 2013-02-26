@@ -287,6 +287,12 @@ article {
     margin-left: 1em;
 }
 
+article img {
+    max-width: 300px;
+    float: left;
+    margin: 0.5em 1em 0.5em 0.25em;
+}
+
 .post-info p {
     margin: 0.2em 0;
 }
